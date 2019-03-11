@@ -4,13 +4,13 @@
   <meta charset='utf-8'>
   <title>OSM iD editor</title>
 
-  <link rel='stylesheet' href='iD.css'>
+  <link rel='stylesheet' href='dist/iD.css'>
 
   <meta name='viewport' content='initial-scale=1.0 maximum-scale=1.0'>
   <meta name='apple-mobile-web-app-capable' content='yes'>
   <meta name='apple-mobile-web-app-status-bar-style' content='black-translucent'>
 
-  <script src='iD.min.js'></script>
+  <script src='dist/iD.min.js'></script>
 </head>
 <body>
   <div id='id-container'></div>
@@ -28,7 +28,7 @@
   <script>
     'use strict';
 
-    const assetPath = '/third_party/id/';
+    const assetPath = `${location.pathname}dist/`;
 
     const defaultLocale = 'sr';
     const match = location.search.match(/.*[?&]locale=([^&]*)*/);
